@@ -267,6 +267,8 @@ typedef void (^OIDAuthStateAuthorizationCallback)(OIDAuthState *_Nullable authSt
 - (nullable OIDTokenRequest *)tokenRefreshRequestWithAdditionalParameters:
     (nullable NSDictionary<NSString *, NSString *> *)additionalParameters;
 
+- (BOOL)isTokenFresh;
+
 @end
 
 NS_ASSUME_NONNULL_END
